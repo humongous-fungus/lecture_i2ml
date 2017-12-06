@@ -25,11 +25,12 @@
 \DefineVerbatimEnvironment{Soutput}{Verbatim}{}
 \newenvironment{Schunk}{}{}
 
+
 % ------------------------------------------------------------------------
 % special numbering for lectures
 
 \AtBeginLecture{%
-  \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{../style/LMU-hintergrund1.png}}
+  \usebackgroundtemplate{\includegraphics[width=0.75\paperwidth,height=\paperheight]{../style/LMU-hintergrund1.png}}
   \begin{frame}[plain]
     \global\advance\c@lecture by -1
     \vspace*{\stretch{8}}
@@ -133,7 +134,7 @@
 \setbeamertemplate{items}[ball]
 \setbeamerfont{itemize/enumerate subbody}{size=\normalsize}
 \setbeamerfont{itemize/enumerate subsubbody}{size=\normalsize}
-  
+
 % ------------------------------------------------------------------------
 % Frame title: lecture
 
@@ -184,7 +185,7 @@
   \ifnum\c@lecture<0\else \expandafter\addjustlectureframenumber\csname r@lect:@@\thelecture\endcsname\fi%
   \leavevmode%
   \hbox{%
-    \setbox\beamer@linebox=\hbox to\paperwidth{%
+    \setbox\beamer@linebox=\hbox to 0.75\paperwidth{%
       \hskip 1em%
       {\usebeamercolor[fg]{author in head/foot}%
       \insertshortauthor~~\copyright~~\insertshortdate}\hfill%
@@ -202,9 +203,9 @@
     \ht\beamer@linebox=2.5mm%
     \dp\beamer@linebox=0pt%
     \setbox\beamer@linebox=\vbox{\box\beamer@linebox\vskip1.125ex}%
-    \rule[4.5mm]{\paperwidth}{0.5pt}%
+    \rule[4.5mm]{0.75\paperwidth}{0.5pt}%
     %%
-    \hskip-\paperwidth%
+    \hskip-0.75\paperwidth%
     \hbox{\box\beamer@linebox\hfill}}
 }
 

@@ -1,4 +1,4 @@
-\documentclass[11pt,compress,t,notes=noshow, xcolor=table]{beamer}
+\documentclass[11pt,compress,t,notes=noshow, xcolor=table,aspectratio=169]{beamer}
 
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
@@ -57,6 +57,10 @@
 
 %\usetheme{lmu-lecture}
 \usepackage{../style/lmu-lecture}
+
+\setbeamersize{sidebar width right=0.25\paperwidth}
+{\usebeamercolor{sidebar}}
+\setbeamercolor{sidebar}{bg=black}
 
 \let\code=\texttt
 \let\proglang=\textsf
