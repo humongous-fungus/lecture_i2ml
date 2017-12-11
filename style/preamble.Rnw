@@ -58,7 +58,7 @@
 %\usetheme{lmu-lecture}
 \usepackage{../style/lmu-lecture}
 
-\setbeamersize{sidebar width right=0.25\paperwidth}
+\setbeamersize{sidebar width right=\sidebarwidth}
 {\usebeamercolor{sidebar}}
 \setbeamercolor{sidebar}{bg=black}
 
